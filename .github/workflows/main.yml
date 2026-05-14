@@ -1,14 +1,10 @@
 name: Simple Workflow
-
-on:
-  push:
-
+'on':
+  push: null
 jobs:
   test-job:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
       - name: Run Command
         run: echo "GitHub Actions Running"
